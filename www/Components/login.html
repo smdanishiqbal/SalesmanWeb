@@ -1,0 +1,15 @@
+<ui-view>
+    <br><br>
+    <div layout-gt-sm="column">
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Email</label>
+            <input ng-model="user.email">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Password</label>
+            <input ng-model="user.password">
+        </md-input-container>
+        <md-button class="md-raised md-primary" ng-click="login()">Login</md-button>
+    </div>
+
+</ui-view>

@@ -1,0 +1,23 @@
+<ui-view>
+    <div class="sub-header">
+        <h3>WELCOME</h3>
+    </div>
+
+    <form ng-submit="saveData()">
+    <div layout-gt-sm="column">
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Company</label>
+            <input type="text" ng-model="userData.Company" />
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Email</label>
+            <input type="text" ng-model="userData.email" />
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Password</label>
+            <input type="password" ng-model="userData.password" />
+        </md-input-container>
+        <md-button class="md-raised md-primary" type="submit">Create Company Account</md-button>
+    </div>
+    </form>
+</ui-view>

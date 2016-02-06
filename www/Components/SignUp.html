@@ -1,0 +1,27 @@
+<ui-view>
+
+        <div class="sub-header">
+            <h3>
+                SignUp
+            </h3>
+        </div>
+
+    <div layout-gt-sm="column">
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Full Name</label>
+            <input ng-model="name">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Email</label>
+            <input type="text" ng-model="email">
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>Password</label>
+            <input type="password" ng-model="password">
+        </md-input-container>
+        <md-button class="md-raised md-primary" ng-click="submit()">SignUp</md-button>
+        <md-button class="md-raised md-primary" ui-sref="login">Already Have an Account?</md-button>
+
+    </div>
+
+</ui-view>
